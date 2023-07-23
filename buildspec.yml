@@ -3,14 +3,13 @@ version: 0.2
 phases:
   install: 
     runtime-versions:
-      nodejs: 10
+      nodejs: 12
   build:
     commands:
       - echo "Package & Dependicies are getting installed"
-      - export PATH=$PATH:/root/.nvm/versions/node/v10.24.1/bin
       - npm -f install
       - echo "Packages have been installed"
-      - echon "Storing Build Artifact to the Location"
+      - echo "Storing Build Artifact to the Location"
 artifacts:
   type: zip
   paths:
