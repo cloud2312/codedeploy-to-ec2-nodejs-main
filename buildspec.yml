@@ -7,6 +7,7 @@ phases:
   build:
     commands:
       - echo "Package & Dependicies are getting installed"
+      - export PATH=$PATH:/root/.nvm/versions/node/v10.24.1/bin
       - npm -f install
       - echo "Packages have been installed"
       - echon "Storing Build Artifact to the Location"
